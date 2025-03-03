@@ -1,62 +1,64 @@
 :root {
-  --green-color: #4CAF50;
+  --green-color: #4caf50;
+  --green-secondary: #0ed015;
   --background-color: #000000;
   --white: #ffffff;
 }
 
 body {
   font-family: Arial, sans-serif;
-  /* margin: 0;
-  padding: 0; */
-  background-color: var(--white);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 19%,
+    rgba(216, 216, 216, 1) 74%,
+    rgba(155, 154, 154, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
   width: 150px;
 }
 
-/* header {
-  background-color: var(--background-color);
-  color: var(--white);
-  padding: 1rem;
-  text-align: center;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-header h1 {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-header img {
-  max-width: 100px;
-  display: block;
-  margin-top: 30px;
-} */
-
 section#links {
   padding: 2rem;
-  background-color: var(--background-color);
   margin: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   text-decoration: none;
+  background: none;
+  position: relative;
+  z-index: 1;
+  background-color: var(--background-color);
 }
 
-section#links h1 {
+section#links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  background: url("../img/pc.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#links .title {
   color: var(--white);
   text-align: center;
   margin-bottom: 2rem;
   text-decoration: none;
+  z-index: 1;
 }
 
 section#links a {
-  color: var(--green-color);
+  color: var(--green-secondary);
   text-decoration: none;
   font-weight: bold;
 }
@@ -71,37 +73,60 @@ section#links a {
 
 .card {
   background-color: #ffffff;
-  border: 1px solid #166d00;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 250px;
   height: 130px;
-  transition: transform 0.2s;
+  transition: all 0.4s;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.card:hover::before {
+  background-color: var(--background-color);
+  animation: animar 0.4s;
+}
+@keyframes animar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .card:hover {
   transform: scale(1.02);
   background-color: var(--background-color);
   color: var(--white);
+  background: none;
 }
 
 .card a {
-  color: #4CAF50;
   text-decoration: none;
   font-weight: bold;
 }
 
-.card a:hover {
-  text-decoration: underline;
-}
 
 #back-to-top {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   font-size: 20px;
   display: flex;
@@ -120,6 +145,7 @@ section#links a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Efeito hover para o botão de voltar ao topo */
 #back-to-top:hover {
   background-color: #23e22d;
   color: #000000;

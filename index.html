@@ -1,198 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/favicon.ico" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/icons/favicon.ico">
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <title>ADS - 2025</title>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-sm">
-      <div class="container">
-        <a href="https://pelomun.do/ads25/" class="navbar-brand" d-flex align-items-center>
-          <img src="./assets/img/logo_oficial.png" alt="logo" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNavbar">
-          <div class="navbar-nav">
-            <a href="https://pelomun.do/ads25/" class="nav-link active">Home</a>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Grupos</a>
-              <ul class="dropdown-menu">
-                <li><a href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW" target="_blank" class="dropdown-item">Complica Oficial</a></li>
-                <li><a href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4" target="_blank" class="dropdown-item">Descomplica Girls</a></li>
-                <li><a href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC" target="_blank" class="dropdown-item">Tira dúvidas ADS</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a href="https://discord.gg/pE5meBvGJa" target="_blank" class="dropdown-item">Discord</a></li>
+    <title>ADS - 2025</title>
+  </head>
 
-              </ul>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container">
+          <a
+            href="https://pelomun.do/ads25/"
+            class="navbar-brand"
+            d-flex
+            align-items-center
+          >
+            <img src="./assets/img/logo_oficial.png" alt="logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuNavbar">
+            <div class="navbar-nav">
+              <a href="https://pelomun.do/ads25/" class="nav-link active"
+                >Home</a
+              >
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Grupos</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Complica Oficial</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Descomplica Girls</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Tira dúvidas ADS</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      href="https://discord.gg/pE5meBvGJa"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Discord</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Conteúdos</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://biblioteca.rocketseat.com.br/"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Biblioteca Rocketseat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://class.devsamurai.com.br/"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Curso DevSamurai</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Guia do Dev Junior (PDF)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Guia GIT - Como Não Usar (PDF)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.khanacademy.org/computing/computers-and-internet"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Khan Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./files/LiveAquecimentoCalourada.rar"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Live de Aquecimento (resumo)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Livros</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/drive/folders/1WBc_kXYP8qAGYIM3r6sbSq8JAW9ZAT11"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Monitoria Frontend</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Sobrevivendo ao Frontend (PDF)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Networking</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://forms.gle/u71c3VeUpezgfJk48"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Forms - Profissão e LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing"
+                      target="_blank"
+                      class="dropdown-item"
+                      >LinkedIn da galera do grupo</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >PEX</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="./files/Manual_Projeto_de_Extensão.pdf"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Manual PEX</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Live Descomplica (Tira dúvidas)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >GitHub</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://github.com/FaculdadeDescomplica"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Repositório Descomplica</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://learngitbranching.js.org/"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Aprenda GIT (Jogo)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Gabaritos</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0"
+                      target="_blank"
+                      class="dropdown-item"
+                      >ADS - 2025</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Descomplica</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://no.descomplica.com.br/central_de_felicidade_gradua"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Abertura de Tickets</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conteúdos</a>
-              <ul class="dropdown-menu">
-                <li><a href="https://biblioteca.rocketseat.com.br/" target="_blank" class="dropdown-item">Biblioteca Rocketseat</a></li>
-                <li><a href="https://class.devsamurai.com.br/" target="_blank" class="dropdown-item">Curso DevSamurai</a></li>
-                <li><a href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0" target="_blank" class="dropdown-item">Guia do Dev Junior (PDF)</a></li>
-                <li><a href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf" target="_blank" class="dropdown-item">Guia GIT - Como Não Usar (PDF)</a></li>
-                <li><a href="https://www.khanacademy.org/computing/computers-and-internet" target="_blank" class="dropdown-item">Khan Academy</a></li>
-                <li><a href="./files/LiveAquecimentoCalourada.rar" target="_blank" class="dropdown-item">Live de Aquecimento (resumo)</a></li>
-                <li><a href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N" target="_blank" class="dropdown-item">Livros</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1WBc_kXYP8qAGYIM3r6sbSq8JAW9ZAT11" target="_blank" class="dropdown-item">Monitoria Frontend</a></li>
-                <li><a href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82" target="_blank" class="dropdown-item">Sobrevivendo ao Frontend (PDF)</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Networking</a>
-              <ul class="dropdown-menu">
-                <li><a href="https://forms.gle/u71c3VeUpezgfJk48" target="_blank" class="dropdown-item">Forms - Profissão e LinkedIn</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing" target="_blank" class="dropdown-item">LinkedIn da galera do grupo</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PEX</a>
-              <ul class="dropdown-menu">
-                <li><a href="./files/Manual_Projeto_de_Extensão.pdf" target="_blank" class="dropdown-item">Manual PEX</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing" target="_blank" class="dropdown-item">Live Descomplica (Tira dúvidas)</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GitHub</a>
-              <ul class="dropdown-menu">
-                <li><a href="https://github.com/FaculdadeDescomplica" target="_blank" class="dropdown-item">Repositório Descomplica</a></li>
-                <li><a href="https://learngitbranching.js.org/" target="_blank" class="dropdown-item">Aprenda GIT (Jogo)</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gabaritos</a>
-              <ul class="dropdown-menu">
-                <li><a href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0" target="_blank" class="dropdown-item">ADS - 2025</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Descomplica</a>
-              <ul class="dropdown-menu">
-                <li><a href="https://no.descomplica.com.br/central_de_felicidade_gradua" target="_blank" class="dropdown-item">Abertura de Tickets</a></li>
-              </ul>
-            </div>
-
           </div>
         </div>
+      </nav>
+    </header>
+    <section id="links">
+      <h1 class="title">
+        Todos os links foram compartilhados no grupo alternativo no Whatsapp
+        <br />
+        <a
+          href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW"
+          target="_blank"
+          >(clique aqui pra entrar)</a
+        >
+      </h1>
+      <div class="cards-container">
+        <a
+          href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC"
+          target="_blank"
+        >
+          <div class="card">Grupo tira dúvidas</div>
+        </a>
+        <a
+          href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4"
+          target="_blank"
+        >
+          <div class="card">Grupo <strong>apenas</strong> para mulheres</div>
+        </a>
+        <a href="https://discord.gg/pE5meBvGJa" target="_blank">
+          <div class="card">Discord</div>
+        </a>
+        <a href="https://class.devsamurai.com.br/" target="_blank">
+          <div class="card">Cursos DevSamurai</div>
+        </a>
+        <a
+          href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82"
+          target="_blank"
+        >
+          <div class="card">PDF - Sobrevivendo ao Javascript, HTML e CSS</div>
+        </a>
+        <a href="https://biblioteca.rocketseat.com.br/" target="_blank">
+          <div class="card">
+            Biblioteca Rocketseat<br />(Conteúdos gratuitos)
+          </div>
+        </a>
+        <a
+          href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0"
+          target="_blank"
+        >
+          <div class="card">PDF - Guia do Dev Junior</div>
+        </a>
+        <a href="https://forms.gle/u71c3VeUpezgfJk48" target="_blank">
+          <div class="card">
+            Formulário profissões atuais <br />
+            e LinkedIn
+          </div>
+        </a>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing"
+          target="_blank"
+        >
+          <div class="card">Linkedin dos Integrantes do grupo</div>
+        </a>
+        <a
+          href="https://no.descomplica.com.br/knowledge/o-que-%C3%A9-projeto-de-extens%C3%A3o"
+          target="_blank"
+        >
+          <div class="card">Saiba mais sobre o PEX - Projeto de Extensão</div>
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing"
+          target="_blank"
+        >
+          <div class="card">PEX - Descomplica <br />(Tira dúvidas)</div>
+        </a>
+        <a
+          href="https://www.khanacademy.org/computing/computers-and-internet"
+          target="_blank"
+        >
+          <div class="card">Khan Academy<br />Computers and the Internet</div>
+        </a>
+        <a href="https://github.com/FaculdadeDescomplica" target="_blank">
+          <div class="card">
+            GitHub da faculdade <br />
+            escolha o repositório que precisa
+          </div>
+        </a>
+        <a href="https://learngitbranching.js.org/" target="_blank">
+          <div class="card">
+            GitHub - Aprender<br />de maneira fácil<br />e visual
+          </div>
+        </a>
+        <a
+          href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf"
+          target="_blank"
+        >
+          <div class="card">
+            GIT - 10 dicas de<br />como não<br />utilizar o GIT
+          </div>
+        </a>
+        <a href="./files/LiveAquecimentoCalourada.rar" target="_blank">
+          <div class="card">
+            Resumo das duas<br />primeiras lives<br />"Aquecimento Calourada"
+          </div>
+        </a>
+        <a
+          href="https://no.descomplica.com.br/central_de_felicidade_gradua"
+          target="_blank"
+        >
+          <div class="card">Abertura de tickets <br />Descomplica</div>
+        </a>
+        <a
+          href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N"
+          target="_blank"
+        >
+          <div class="card">Livros</div>
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1WBc_kXYP8qAGYIM3r6sbSq8JAW9ZAT11"
+          target="_blank"
+        >
+          <div class="card">Pasta no Drive<br />da monitoria de Frontend</div>
+        </a>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0"
+          target="_blank"
+        >
+          <div class="card">Gabarito ADS - 2025</div>
+        </a>
       </div>
-    </nav>
-  </header>
-  <section id="links">
-    <h1>Todos os links foram compartilhados no grupo alternativo no Whatsapp <br> <a href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW" target="_blank">(clique aqui pra entrar)</a></h1>
-    <div class="cards-container">
-      <a href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC" target="_blank">
-        <div class="card">Grupo tira dúvidas</div>
-      </a>
-      <a href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4" target="_blank">
-        <div class="card">Grupo <strong>apenas</strong> para mulheres</div>
-      </a>
-      <a href="https://discord.gg/pE5meBvGJa" target="_blank">
-        <div class="card">Discord</div>
-      </a>
-      <a href="https://class.devsamurai.com.br/" target="_blank">
-        <div class="card">Cursos DevSamurai
-        </div>
-      </a>
-      <a href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82" target="_blank">
-        <div class="card">PDF - Sobrevivendo ao Javascript, HTML e CSS</div>  
-      </a>
-      <a href="https://biblioteca.rocketseat.com.br/" target="_blank">
-        <div class="card">Biblioteca Rocketseat<br>(Conteúdos gratuitos)</div>
-      </a>
-      <a href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0" target="_blank">
-        <div class="card">PDF - Guia do Dev Junior</div>
-      </a>
-      <a href="https://forms.gle/u71c3VeUpezgfJk48" target="_blank">
-        <div class="card">Formulário profissões atuais <br> e LinkedIn</div>
-      </a>
-      <a href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing" target="_blank">
-        <div class="card">Linkedin dos Integrantes do grupo</div>
-      </a>
-      <a href="https://no.descomplica.com.br/knowledge/o-que-%C3%A9-projeto-de-extens%C3%A3o" target="_blank">
-        <div class="card">Saiba mais sobre o PEX - Projeto de Extensão</div>
-      </a>
-      <a href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing" target="_blank">
-        <div class="card">PEX - Descomplica <br>(Tira dúvidas)</div>
-      </a>
-      <a href="https://www.khanacademy.org/computing/computers-and-internet" target="_blank">
-        <div class="card">Khan Academy<br>Computers and the Internet</div>
-      </a>
-      <a href="https://github.com/FaculdadeDescomplica" target="_blank">
-        <div class="card">GitHub da faculdade <br> escolha o repositório que precisa</div>
-      </a>
-      <a href="https://learngitbranching.js.org/" target="_blank">
-        <div class="card">GitHub - Aprender<br>de maneira fácil<br>e visual</div>
-      </a>
-      <a href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf" target="_blank">
-        <div class="card">GIT - 10 dicas de<br>como não<br>utilizar o GIT</div>
-      </a>
-      <a href="./files/LiveAquecimentoCalourada.rar" target="_blank">
-        <div class="card">Resumo das duas<br>primeiras lives<br>"Aquecimento Calourada"</div>
-      </a>
-      <a href="https://no.descomplica.com.br/central_de_felicidade_gradua" target="_blank">
-        <div class="card">Abertura de tickets <br>Descomplica</div>
-      </a>
-      <a href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N" target="_blank">
-        <div class="card">Livros</div>
-      </a>
-      <a href="https://drive.google.com/drive/folders/1WBc_kXYP8qAGYIM3r6sbSq8JAW9ZAT11" target="_blank">
-        <div class="card">Pasta no Drive<br>da monitoria de Frontend</div>
-      </a>
-      <a href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0" target="_blank">
-        <div class="card">Gabarito ADS - 2025</div>
-      </a>
+    </section>
 
+    <footer class="p-4 bg-dark text-light text-center">
+      Esta página foi desenvolvida pelos próprios alunos de ADS 2025.1, portanto
+      <strong>não é uma página oficial</strong> da Faculdade Descomplica.
+    </footer>
+
+    <div class="top">
+      <button id="back-to-top" onclick="scrollToTop()">
+        <i class="ph ph-arrow-circle-up"></i>
+      </button>
     </div>
-  </section>
+    <script>
+      console.log("Já codou seu Hello World hoje?");
 
-  <footer class="p-4 bg-dark text-light text-center">
-    Esta página foi desenvolvida pelos próprios alunos de ADS 2025.1, portanto <strong>não é uma página oficial</strong> da Faculdade Descomplica.
-  </footer>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
 
-
-
-
-
-  <div class="top">
-    <button id="back-to-top" onclick="scrollToTop()">
-      <i class="ph ph-arrow-circle-up"></i>
-    </button>
-  </div>
-  <script>
-    console.log("Já codou seu Hello World hoje?")
-
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
