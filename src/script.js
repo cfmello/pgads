@@ -1,21 +1,12 @@
 const btnToTop = document.getElementById("back-to-top");
-const calendarBtn = document.getElementById("calendar-btn");
 
-calendarBtn.addEventListener("click", () => {
-  alert(
-    "Em breve seu calendário aparecerá aqui! Fique a vontade para criar a API e contribuir com nossa página."
-  );
-});
-
-const scrollToTop = () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
     btnToTop.classList.add("active");
   } else {
     btnToTop.classList.remove("active");
   }
-};
-
-window.addEventListener("scroll", scrollToTop);
+});
 
 btnToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });

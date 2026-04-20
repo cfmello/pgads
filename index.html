@@ -5,294 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/icons/favicon.ico" />
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./assets/css/style.css" />
-
     <script src="./src/script.js" defer></script>
-
     <title>ADS - 2025</title>
   </head>
 
   <body>
-    <header>
-  <!-- Adicionei navbar bg-white para garantir contraste correto -->
-  <nav class="navbar navbar-expand-sm bg-white shadow-sm">
-    <div class="container-fluid">
-      <!-- Corrigi o atributo class (d-flex estava fora) -->
-      <a href="https://pelomun.do/ads25/" class="navbar-brand d-flex align-items-center">
-        <img src="./assets/img/logo_oficial.png" alt="logo" class="logo" />
-      </a>
-
-      <!-- Botão do menu mobile -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menuNavbar"
-        aria-controls="menuNavbar"
-        aria-expanded="false"
-        aria-label="Alternar navegação"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menu principal -->
-      <div class="collapse navbar-collapse" id="menuNavbar">
-        <div class="navbar-nav">
-          <a href="https://pelomun.do/ads25/" class="nav-link active">Home</a>
-
-          <!-- Dropdown Descomplica -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Descomplica</a>
-            <ul class="dropdown-menu">
-              <li><a href="https://no.descomplica.com.br/central_de_felicidade_gradua" target="_blank" class="dropdown-item">Abertura de Tickets</a></li>
-              <li><a href="https://github.com/FaculdadeDescomplica" target="_blank" class="dropdown-item">Repositório Oficial</a></li>
-            </ul>
-          </div>
-
-          <!-- Dropdown Grupos -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Grupos</a>
-            <ul class="dropdown-menu">
-              <li><a href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW" target="_blank" class="dropdown-item">Grupo alunos</a></li>
-              <li><a href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4" target="_blank" class="dropdown-item">Grupo das meninas</a></li>
-              <li><a href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC" target="_blank" class="dropdown-item">Tira dúvidas ADS</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a href="https://discord.gg/pE5meBvGJa" target="_blank" class="dropdown-item">Discord</a></li>
-            </ul>
-          </div>
-
-          <!-- Dropdown Conteúdos -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conteúdos</a>
-            <ul class="dropdown-menu">
-              <li><a href="https://biblioteca.rocketseat.com.br/" target="_blank" class="dropdown-item">Biblioteca Rocketseat</a></li>
-              <li><a href="https://class.devsamurai.com.br/" target="_blank" class="dropdown-item">Curso DevSamurai</a></li>
-              <li><a href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0" target="_blank" class="dropdown-item">Guia do Dev Junior (PDF)</a></li>
-              <li><a href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf" target="_blank" class="dropdown-item">Guia GIT - Como Não Usar (PDF)</a></li>
-              <li><a href="https://www.khanacademy.org/computing/computers-and-internet" target="_blank" class="dropdown-item">Khan Academy</a></li>
-              <li><a href="./files/LiveAquecimentoCalourada.rar" target="_blank" class="dropdown-item">Live de Aquecimento (resumo)</a></li>
-              <li><a href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N" target="_blank" class="dropdown-item">Livros</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1WBc_kXYP8qAGYIM3r6sbSq8JAW9ZAT11" target="_blank" class="dropdown-item">Monitoria Frontend</a></li>
-              <li><a href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82" target="_blank" class="dropdown-item">Sobrevivendo ao Frontend (PDF)</a></li>
-            </ul>
-          </div>
-
-          <!-- Dropdown Networking -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Networking</a>
-            <ul class="dropdown-menu">
-              <li><a href="https://forms.gle/u71c3VeUpezgfJk48" target="_blank" class="dropdown-item">Forms - Profissão e LinkedIn</a></li>
-              <li><a href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing" target="_blank" class="dropdown-item">LinkedIn da galera do grupo</a></li>
-            </ul>
-          </div>
-
-          <!-- Dropdown PEX -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PEX</a>
-            <ul class="dropdown-menu">
-              <li><a href="./files/Manual_Projeto_de_Extensão.pdf" target="_blank" class="dropdown-item">Manual PEX</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing" target="_blank" class="dropdown-item">Live Descomplica (Tira dúvidas)</a></li>
-            </ul>
-          </div>
-
-          <!-- Dropdown GitHub -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GitHub</a>
-            <ul class="dropdown-menu">
-              <li><a href="https://learngitbranching.js.org/" target="_blank" class="dropdown-item">Aprenda GIT (Jogo)</a></li>
-            </ul>
-          </div>
-
-          <!-- Dropdown Gabaritos -->
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gabaritos</a>
-            <ul class="dropdown-menu">
-              <li><a href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0" target="_blank" class="dropdown-item">ADS - 2025</a></li>
-            </ul>
-          </div>
-        </div>
+    <header class="site-header">
+      <div class="container d-flex align-items-center justify-content-between py-2">
+        <a href="https://pelomun.do/ads25/" class="navbar-brand">
+          <img src="./assets/img/logo_oficial.png" alt="ADS 2025" class="logo" />
+        </a>
+        <span class="header-badge">Turma 2025</span>
       </div>
-    </div>
-  </nav>
-</header>
-
+    </header>
 
     <main>
-      <h1 class="title-home">Turma de ADS Descomplica 2025</h1>
-
-      <section id="home">
-        <div class="home-container">
-          <h3 style="margin: auto;">Calendário Descomplica</h3>
-
-          <div class="ratio ratio-16x9">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showNav=0&showCalendars=0&showTabs=0&mode=AGENDA&hl=pt_BR&showDate=0&title=Datas%20importantes&showTitle=0&src=MjgwODJhMDQxZTUyMzEzN2M0MjUxNWZiMjUzYmZhNzJjM2JmNzBiNzU1ZTQ1ZTFhNDhhMTkyNjgzNzRhN2Q2MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" class="w-100 h-100" style="border-width:0;margin: auto;" frameborder="0" scrolling="no"></iframe>
-          </div>
-
-          <div class="btn-control" style="padding-top: 10px;">
-            <a class="btn" href="#links">Links</a>
-            <a class="btn" href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC" target="_blank">
-              Grupo de alunos
-            </a>
-
-            <button id="calendar-btn" class="btn">Calendário</button>
-          </div>
+      <section class="hero">
+        <div class="container text-center">
+          <h1 class="hero-title">ADS Descomplica 2025</h1>
+          <p class="hero-subtitle">Recursos, links e materiais da turma</p>
+          <a href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW" target="_blank" class="btn-hero">
+            <i class="ph ph-whatsapp-logo"></i> Entrar no grupo principal
+          </a>
         </div>
       </section>
 
-      <section id="links" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4 text-white"><strong>
-      Todos os links foram compartilhados no grupo alternativo no WhatsApp
-    </strong></h2>
-    <p class="text-center mb-5">
-      <a href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW" target="_blank" class="btn btn-success btn-lg text-white"><strong>Clique aqui pra entrar</strong>
-      
-      </a>
-    </p>
+      <section class="links-section">
+        <div class="container">
 
-     <div class="row g-4">
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Grupo tira dúvidas no WhatsApp</div>
+          <div class="category">
+            <h2 class="category-title"><i class="ph ph-users-three"></i> Grupos</h2>
+            <div class="cards-grid">
+              <a href="https://chat.whatsapp.com/GXrrRY2ElYe6tjMdnYUrEW" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-whatsapp-logo card-icon"></i>
+                  <span>Grupo de alunos</span>
+                </div>
+              </a>
+              <a href="https://chat.whatsapp.com/DLfzUb3s4BEBo6qjyEm9GC" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-whatsapp-logo card-icon"></i>
+                  <span>Tira dúvidas ADS</span>
+                </div>
+              </a>
+              <a href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-whatsapp-logo card-icon"></i>
+                  <span>Grupo das meninas</span>
+                </div>
+              </a>
+              <a href="https://discord.gg/pE5meBvGJa" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-discord-logo card-icon"></i>
+                  <span>Servidor no Discord</span>
+                </div>
               </a>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://chat.whatsapp.com/GvWCFC0HRnC5rSUlJJiIn4" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Grupo <strong class="text-danger">apenas</strong> para mulheres</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://discord.gg/pE5meBvGJa" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Servidor no Discord</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://forms.gle/u71c3VeUpezgfJk48" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Formulário profissões atuais e LinkedIn</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Linkedin dos Integrantes do grupo <br> (respostas do formulário)</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://no.descomplica.com.br/central_de_felicidade_gradua" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Descomplica - Abertura de tickets</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://github.com/FaculdadeDescomplica" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Descomplica - Repositório oficial do curso<br> (por disciplina)</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Gabarito ADS</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://no.descomplica.com.br/knowledge/o-que-%C3%A9-projeto-de-extens%C3%A3o" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">PEX - Saiba mais sobre o Projeto de Extensão</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">PEX - Descomplica <br>(Tira dúvidas)</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="./files/Pex-CaioRossiDev.pdf" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">PEX - Roteiro de apoio <br>por @Caiorossi.dev</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://www.khanacademy.org/computing/computers-and-internet" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Curso - Computers and the Internet <br> Khan Academy</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://class.devsamurai.com.br/" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Curso - DevSamurai <br>para download</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Material - Sobrevivendo ao Javascript, HTML e CSS</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://biblioteca.rocketseat.com.br/" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Material - Biblioteca Rocketseat<br>(Conteúdos gratuitos)</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Material - Guia do Dev Junior (PDF)</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://learngitbranching.js.org/" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">GitHub - Aprender de maneira fácil e visual</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">GitHub - 10 dicas de como não utilizar o GIT</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Livros</div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <a href="https://drivedepobre.com/" target="_blank" class="text-decoration-none">
-                <div class="card card-uniform shadow-sm">Drive de Pobre</div>
-              </a>
-            </div>
-
           </div>
-        </div>
-</section>
 
+          <div class="category">
+            <h2 class="category-title"><i class="ph ph-graduation-cap"></i> Descomplica</h2>
+            <div class="cards-grid">
+              <a href="https://no.descomplica.com.br/central_de_felicidade_gradua" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-ticket card-icon"></i>
+                  <span>Abertura de tickets</span>
+                </div>
+              </a>
+              <a href="https://github.com/FaculdadeDescomplica" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-github-logo card-icon"></i>
+                  <span>Repositório oficial do curso</span>
+                </div>
+              </a>
+              <a href="https://docs.google.com/spreadsheets/d/1xDbbY8MJZFhGo4ZjrPBKmHJtgmqm4_sW5lhM4BakHM0/edit?gid=0#gid=0" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-check-square card-icon"></i>
+                  <span>Gabarito ADS 2025</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2 class="category-title"><i class="ph ph-books"></i> Conteúdos</h2>
+            <div class="cards-grid">
+              <a href="https://biblioteca.rocketseat.com.br/" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-rocket card-icon"></i>
+                  <span>Biblioteca Rocketseat</span>
+                </div>
+              </a>
+              <a href="https://class.devsamurai.com.br/" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-sword card-icon"></i>
+                  <span>Curso DevSamurai</span>
+                </div>
+              </a>
+              <a href="https://www.khanacademy.org/computing/computers-and-internet" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-monitor card-icon"></i>
+                  <span>Khan Academy — Computers & Internet</span>
+                </div>
+              </a>
+              <a href="https://docs.google.com/presentation/d/1Uh79KZ09w9imzYH4rlVU7Cgvbjlxi9Txm3HPrQ5vJ2Q/edit#slide=id.g10e443c7074_0_82" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-file-html card-icon"></i>
+                  <span>Sobrevivendo ao JS, HTML e CSS</span>
+                </div>
+              </a>
+              <a href="https://docs.google.com/document/d/1hMN4mFLvdRMF-Q1tjSKmwS05lvhMnw-pM7U43YUWFOE/edit?tab=t.0" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-file-text card-icon"></i>
+                  <span>Guia do Dev Junior</span>
+                </div>
+              </a>
+              <a href="https://drive.google.com/drive/folders/1WBc_kXYP8qAGYIM3r6sbSq8JAW9ZAT11" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-video card-icon"></i>
+                  <span>Monitoria Frontend</span>
+                </div>
+              </a>
+              <a href="./files/LiveAquecimentoCalourada.rar" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-archive card-icon"></i>
+                  <span>Live de Aquecimento (resumo)</span>
+                </div>
+              </a>
+              <a href="https://descomplica2-my.sharepoint.com/:f:/g/personal/cristhiano_2510906_aluno_faculdadedescomplica_com_br/En7xxhmZtqBDsVj54YpWv_8B3Yyzps2zEs65ZD5Q4a_yNA?e=UgYt3N" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-books card-icon"></i>
+                  <span>Livros</span>
+                </div>
+              </a>
+              <a href="https://drivedepobre.com/" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-cloud card-icon"></i>
+                  <span>Drive de Pobre</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2 class="category-title"><i class="ph ph-git-branch"></i> GitHub</h2>
+            <div class="cards-grid">
+              <a href="https://learngitbranching.js.org/" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-game-controller card-icon"></i>
+                  <span>Aprenda GIT de forma visual</span>
+                </div>
+              </a>
+              <a href="./files/10_Dicas_de_como_não_utilizar_o_GIT.pdf" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-file-pdf card-icon"></i>
+                  <span>10 dicas de como não usar o GIT</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2 class="category-title"><i class="ph ph-network"></i> Networking</h2>
+            <div class="cards-grid">
+              <a href="https://forms.gle/u71c3VeUpezgfJk48" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-clipboard-text card-icon"></i>
+                  <span>Formulário — profissão e LinkedIn</span>
+                </div>
+              </a>
+              <a href="https://docs.google.com/spreadsheets/d/1h0JCFT_OGw_9I9T4lblp4bTccHKT48POzoTWkP65Jxo/edit?usp=sharing" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-linkedin-logo card-icon"></i>
+                  <span>LinkedIn da galera</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2 class="category-title"><i class="ph ph-clipboard-text"></i> PEX</h2>
+            <div class="cards-grid">
+              <a href="https://no.descomplica.com.br/knowledge/o-que-%C3%A9-projeto-de-extens%C3%A3o" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-info card-icon"></i>
+                  <span>O que é o Projeto de Extensão?</span>
+                </div>
+              </a>
+              <a href="./files/Manual_Projeto_de_Extensão.pdf" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-file-pdf card-icon"></i>
+                  <span>Manual PEX</span>
+                </div>
+              </a>
+              <a href="https://drive.google.com/drive/folders/1pZ6TIMe5az0J0cdR6yPXCnNwyxhTclWU?usp=sharing" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-video card-icon"></i>
+                  <span>PEX — Live Tira Dúvidas</span>
+                </div>
+              </a>
+              <a href="./files/Pex-CaioRossiDev.pdf" target="_blank" class="card-link">
+                <div class="card-item">
+                  <i class="ph ph-file-text card-icon"></i>
+                  <span>Roteiro de apoio por @Caiorossi.dev</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
-    <footer class="p-4 bg-dark text-light text-center">
-      Esta página foi desenvolvida pelos próprios alunos de ADS 2025.1, portanto
+    <footer class="site-footer">
+      Esta página foi desenvolvida pelos próprios alunos de ADS 2025.1 —
       <strong>não é uma página oficial</strong> da Faculdade Descomplica.
     </footer>
 
     <div class="top">
-      <button id="back-to-top">
+      <button id="back-to-top" title="Voltar ao topo">
         <i class="ph ph-arrow-circle-up"></i>
       </button>
     </div>
